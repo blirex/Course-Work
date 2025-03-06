@@ -1,6 +1,15 @@
 ﻿#include<iostream>
 using namespace std;
 
+string caesarCipher(const string& text, int startKey, int multiplier, int divisor) {
+
+    string encryptedText = "";
+    int key = startKey;
+
+
+    return encryptedText;
+}
+
 int main() {
     cout << "============================" << endl;
     cout << "      Cipher Caesar" << endl;
