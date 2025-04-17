@@ -35,6 +35,27 @@ int main() {
     cin >> choice;
     cin.ignore();
 
+    if (choice == 1) {
+        string text;
+        int startKey, multiplier, divisor;
 
+        cout << "Input Text: ";
+        getline(cin, text);
+        cout << "Input start key: ";
+        cin >> startKey;
+        cout << "Input multiplier: ";
+        cin >> multiplier;
+        cout << "Input divisor: ";
+        cin >> divisor;
+        cin.ignore();
+
+        string encrypted = caesarCipher(text, startKey, multiplier, divisor);
+        cout << "Encrypted text: " << encrypted << endl;
+    }
+    else {
+        cout << "Exit..." << endl;
+    }
+
+    return 0;
    
 }
