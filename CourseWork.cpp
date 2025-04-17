@@ -22,12 +22,20 @@ string caesarCipher(const string& text, int startKey, int multiplier, int diviso
     }
     return encryptedText;
 }
+string caesarDecipher(const string& text, int startKey, int multiplier, int divisor) {
+    string decryptedText = "";
+    int key = startKey;
+
+   
+    return decryptedText;
+}
 
 int main() {
     cout << "============================" << endl;
     cout << "      Cipher Caesar" << endl;
     cout << "============================" << endl;
     cout << "1. Encrypt phrase: " << endl;
+    cout << "2. Decrypt phrase: " << endl;
     cout << "2. Exit" << endl;
     cout << "Choose option: ";
 
@@ -51,6 +59,9 @@ int main() {
 
         string encrypted = caesarCipher(text, startKey, multiplier, divisor);
         cout << "Encrypted text: " << encrypted << endl;
+    }
+    else if (choice == 2) {
+       
     }
     else {
         cout << "Exit..." << endl;
