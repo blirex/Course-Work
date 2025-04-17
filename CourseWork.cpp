@@ -73,7 +73,20 @@ int main() {
         cout << "Encrypted text: " << encrypted << endl;
     }
     else if (choice == 2) {
-       
+        string text;
+        int startKey, multiplier, divisor;
+
+        cout << "Input Encrypted Text: ";
+        getline(cin, text);
+        cout << "Input start key: ";
+        cin >> startKey;
+        cout << "Input multiplier: ";
+        cin >> multiplier;
+        cout << "Input divisor: ";
+        cin >> divisor;
+
+        string decrypted = caesarDecipher(text, startKey, multiplier, divisor);
+        cout << "Decrypted text: " << decrypted << endl;
     }
     else {
         cout << "Exit..." << endl;
