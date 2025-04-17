@@ -26,7 +26,19 @@ string caesarDecipher(const string& text, int startKey, int multiplier, int divi
     string decryptedText = "";
     int key = startKey;
 
-   
+    for (char charValue : text) {
+        if (isalpha(charValue)) {
+            int shift = (key * multiplier) / divisor;
+            if (islower(charValue)) {
+                charValue = ((charValue - 'a' - shift + 26) % 26) + 'a';
+            }
+            else {
+                charValue = ((charValue - 'A' - shift + 26) % 26) + 'A';
+            }
+        }
+        decryptedText += charValue;
+        key++;
+    }
     return decryptedText;
 }
 
