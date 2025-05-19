@@ -48,7 +48,7 @@ int main() {
     cout << "============================" << endl;
     cout << "1. Encrypt phrase: " << endl;
     cout << "2. Decrypt phrase: " << endl;
-    cout << "2. Exit" << endl;
+    cout << "3  . Exit" << endl;
     cout << "Choose option: ";
 
     int choice;
